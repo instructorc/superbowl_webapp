@@ -1,0 +1,35 @@
+#flexcontain{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: arial;
+}
+
+.bowlcard{
+    width: 400px;
+    flex: 1 0 350px;
+    height: 350px;
+    padding: 1.4em;
+
+}
+.cardhead{
+    background-image: url(https://operations.nfl.com/favicon.ico?v=1);
+    background-size: cover;
+}
+h1{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 1.3em;
+}
+mat-card{
+
+    width: 80%;
+    margin: auto;
+}
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+  }
+  
+  .demo-tab-content {
+    padding: 16px;
+  }
