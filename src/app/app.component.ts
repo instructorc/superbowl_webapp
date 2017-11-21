@@ -11,7 +11,8 @@ import { DataService } from './data.service';
 export class AppComponent {
   
   // Define a superbowl property to hold our superbowls data
-  superbowls: Array<any>;
+  superbowls: Array<any>;  //"any" is a data type specific to typescript.  In C# this would be declared as Array<any> superbowls;
+
 
   // Create an instance of the DataService through dependency injection
   constructor(private _dataService: DataService) {

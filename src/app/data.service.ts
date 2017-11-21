@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 export class DataService {
 
   result:any;
-
+  SB: string;
   constructor(private _http: Http) { }
 
   getSuperbowls() {

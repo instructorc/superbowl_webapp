@@ -42,12 +42,13 @@ router.get('/superbowls', (req, res) => {
     });
 });
 
-/*router.get('/superbowls/:SB', (req, res) => {
+router.get('/superbowls/:SB', (req, res) => {
+    
     connection((db) => {
         db.collection('superbowls')
-            .findById(req.params.SB)
+            .find({ SB:req.params.SB })
             .toArray()
-            .then((superbowls) => {
+            .then((superbowls) => {         //The .then() method returns a Promise.  It takes two arguments: callback functions for the success and failure cases of the Promise
                 response.data = superbowls;
                 res.json(response);
             })
@@ -55,11 +56,11 @@ router.get('/superbowls', (req, res) => {
                 sendError(err, res);
             });
     });
-});*/
+});
 
 
 //Get a specific superbowl - coding convention 2
-router.get('/superbowls/:SB', function(req, res) {
+/*router.get('/superbowls/:SB', function(req, res) {
     console.log('Requesting a specific superbowl');
     superbowls.find(req.params.SB)
         .exec(function(err, superbowls) {
@@ -70,6 +71,6 @@ router.get('/superbowls/:SB', function(req, res) {
                 res.json(superbowls);
             }
         });
-});
+});*/
 
 module.exports = router;
